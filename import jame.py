@@ -1,7 +1,9 @@
-import jame
-def run(runfile,salam2):
-  jame.salam =  salam2
+from jame import arman
+with open("jame.py","r") as jame:
+  exec(jame.read())
+'''
+def run(runfile):
   with open(runfile,"r") as rnf:
-    exec(rnf.read())
-salam2 = 10
-run('jame.py',salam2)
+    exec(rnf.read(20))
+run('jame.py')
+'''
